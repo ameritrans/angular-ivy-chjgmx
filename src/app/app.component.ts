@@ -1,10 +1,45 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { selectPhotos } from './store/photo.selectors';
+import { dislikePhoto, likePhoto, loadPhotos } from './store/photo.actions';
+import { AppState } from './store/app.state';
+import { Photo } from './photo/photo';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+	selector: 'app-root',
+	template: `
+    <div class="photos">
+      <app-photo
+        *ngFor="let photo of photos$ | async; trackBy: trackById"
+        [photo]="photo"
+        (like)="onLike($event)"
+        (dislike)="onDislike($event)"
+        class="photo"
+      ></app-photo>
+    </div>
+  `,
+	styleUrls: ['./app.component.scss']
 })
-export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+export class AppComponent implements OnInit {
+
+	photos$ = this.store.select(selectPhotos);
+
+	constructor(private store: Store<AppState>) {
+	}
+
+	ngOnInit(): void {
+		this.store.dispatch(loadPhotos());
+	}
+
+	onLike(id: string): void {
+		this.store.dispatch(likePhoto({ id }));
+	}
+
+	onDislike(id: string): void {
+		this.store.dispatch(dislikePhoto({ id }));
+	}
+
+	trackById(index: number, item: Photo): string {
+		return item.id;
+	}
 }
