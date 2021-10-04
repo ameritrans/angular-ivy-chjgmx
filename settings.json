@@ -1,14 +1,17 @@
 {
-	"workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "Visual Studio Light",
+    "editor.fontSize": 13,
     "editor.detectIndentation": false,
-    "editor.minimap.maxColumn": 80,
+	"editor.minimap.maxColumn": 80,
+	"editor.minimap.showSlider": "always",
+	
     "editor.lineNumbers": "off",
     "editor.insertSpaces": false,
     "editor.renderIndentGuides": false,
     "editor.rulers": [
         80
     ],
-    "editor.fontFamily": "'Courier New', monospace",
+    "editor.fontFamily": "'Courier New'",
     "editor.renderLineHighlight": "none",
 	"editor.tokenColorCustomizations": {
 		"types": "#3299b0",
@@ -22,19 +25,8 @@
     "zenMode.hideTabs": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-	"update.enableWindowsBackgroundUpdates": false,
-	"update.channel": "none",
+    "update.enableWindowsBackgroundUpdates": false,
 	"update.mode": "none",
-	"editor.scrollbar.vertical": "visible",
-	"editor.scrollbar.horizontal": "visible",
-	"workbench.colorCustomizations": {
-
-
-		"scrollbarSlider.background": "#cecece",
-		"scrollbarSlider.hoverBackground": "#ababab",
-		"editorRuler.foreground": "#f0f0f0"
-	
-	},
 	"sshfs.configs": [
 		{
 			"label": "Test Bank",
@@ -48,7 +40,7 @@
 	],
 	"material-icon-theme.activeIconPack": "angular",
 	"material-icon-theme.folders.theme": "specific",
-	"material-icon-theme.folders.color": "#90a4ae",
+	"material-icon-theme.folders.color": "#000000",
 	"material-icon-theme.hidesExplorerArrows": false,
 	"material-icon-theme.opacity": 0.5,
 	"material-icon-theme.files.associations": {},
@@ -57,20 +49,80 @@
 	"vsicons.projectDetection.disableDetect": true,
 	"extensions.autoUpdate": false,
 	"workbench.iconTheme": "vscode-icons",
-	"vscode_custom_css.imports": [
-		//"file:///H:/temp/Microsoft/VScode/custom.css"
-	],
 	"vsicons.dontShowNewVersionMessage": true,
 	"workbench.tree.indent": 30,
 	"workbench.tree.renderIndentGuides": "always",
 	"editor.fontWeight": "500",
 	"editor.autoClosingBrackets": "never",
 	"editor.autoClosingQuotes": "never",
+	"editor.autoSurround": "never",
+	"editor.autoClosingBrackets": "never",
 	"extensions.autoCheckUpdates": false,
 	"editor.hover.delay": 1000,
 	"workbench.sash.hoverDelay": 1000,
 	"workbench.hover.delay": 1000,
 	"[typescript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+
+	"editor.overviewRulerBorder": true,
+    "editor.overviewRulerLanes": 30,
+	"editor.showFoldingControls": "mouseover",
+	"workbench.colorCustomizations": {
+        "editorRuler.foreground": "#d4d3d388",
+        "editorGutter.background": "#f9f9f9",
+		"editorIndentGuide.background": "#ffffff",
+		"scrollbarSlider.activeBackground": "#bbbbbb",
+		"scrollbarSlider.background": "#dddddd",
+		"scrollbarSlider.hoverBackground": "#cccccc", 
+		"editor.scrollbar.vertical": "visible",
+		"editor.scrollbar.horizontal": "visible",
+		"scrollbar.shadow": "#ffffff",
+		"breadcrumb.background": "#f8f8f8",
+		"editorOverviewRuler.background": "#0000ff",
+		"minimap.background":"#f0f0f0",
+		"minimapSlider.activeBackground":"#90909050",
+		"minimapSlider.background":"#90909030",
+		"minimapSlider.hoverBackground":"#90909040",
+		"sideBar.background": "#fcfcfc",
+		"statusBar.background": "#bbbbbb",
+		"statusBar.foreground": "#ffffff",
+		"sideBarSectionHeader.background":"#ff0000",
+		"sideBarSectionHeader.border":"#ff0000",
+		"editor.selectionHighlightBackground":"#fefefe"	,
+		"list.hoverBackground":"#f0f0f0",
+		"list.activeSelectionBackground" : "#aaaaaa",
+		"activityBar.background" : "#909090",
+		"activityBar.foreground": "#fefefe",
+		"button.background": "#00ff00",
+		"input.border" : "#f0f0f0",
+        "inputOption.activeBorder" : "#ffffff",
+		"focusBorder": "#a0a0a0",
+		"tree.indentGuidesStroke": "#e0e0e0"
+	},
+	"window.zoomLevel": 0,
+	"editor.semanticTokenColorCustomizations": {
+		"enabled": true,
+		"[Visual Studio Light]": {
+			"rules": {
+				// different color for all constants
+				"property.readonly": "#35166d",
+				// make all class, interface, enum declarations teal color
+				"class": {"foreground": "#267f99"},
+				"interface": {"foreground": "#267f99"},
+				"emum": {"foreground": "#267f99"},
+				"type": {"foreground": "#267f99"}
+				
+		  },
+		}
+	},
+	
+	
+	"editor.scrollbar.verticalScrollbarSize": 0,
+	"window.titleBarStyle": "custom",
+	"explorer.openEditors.visible": 9,
+	 
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	}
 }
