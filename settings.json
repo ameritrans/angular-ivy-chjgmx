@@ -1,0 +1,76 @@
+{
+	"workbench.colorTheme": "Visual Studio Light",
+    "editor.detectIndentation": false,
+    "editor.minimap.maxColumn": 80,
+    "editor.lineNumbers": "off",
+    "editor.insertSpaces": false,
+    "editor.renderIndentGuides": false,
+    "editor.rulers": [
+        80
+    ],
+    "editor.fontFamily": "'Courier New', monospace",
+    "editor.renderLineHighlight": "none",
+	"editor.tokenColorCustomizations": {
+		"types": "#3299b0",
+		"numbers": "#00aaff"
+	},
+    
+    "workbench.view.alwaysShowHeaderActions": true,
+    "workbench.statusBar.feedback.visible": false,
+    "zenMode.hideActivityBar": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideTabs": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+	"update.enableWindowsBackgroundUpdates": false,
+	"update.channel": "none",
+	"update.mode": "none",
+	"editor.scrollbar.vertical": "visible",
+	"editor.scrollbar.horizontal": "visible",
+	"workbench.colorCustomizations": {
+
+
+		"scrollbarSlider.background": "#cecece",
+		"scrollbarSlider.hoverBackground": "#ababab",
+		"editorRuler.foreground": "#f0f0f0"
+	
+	},
+	"sshfs.configs": [
+		{
+			"label": "Test Bank",
+			"root": "/home/vagrant/fabric-dev-servers/test-bank",
+			"host": "localhost",
+			"port": 2222,
+			"username": "vagrant",
+			"privateKeyPath": "H:\\projects\\HealthCare\\Ethereum\\Hyperledger\\fabric\\devenv\\.vagrant\\machines\\default\\virtualbox\\private_key",
+			"name": "fabric-dev-server"
+		}
+	],
+	"material-icon-theme.activeIconPack": "angular",
+	"material-icon-theme.folders.theme": "specific",
+	"material-icon-theme.folders.color": "#90a4ae",
+	"material-icon-theme.hidesExplorerArrows": false,
+	"material-icon-theme.opacity": 0.5,
+	"material-icon-theme.files.associations": {},
+	"material-icon-theme.folders.associations": {},
+	"material-icon-theme.languages.associations": {},
+	"vsicons.projectDetection.disableDetect": true,
+	"extensions.autoUpdate": false,
+	"workbench.iconTheme": "vscode-icons",
+	"vscode_custom_css.imports": [
+		//"file:///H:/temp/Microsoft/VScode/custom.css"
+	],
+	"vsicons.dontShowNewVersionMessage": true,
+	"workbench.tree.indent": 30,
+	"workbench.tree.renderIndentGuides": "always",
+	"editor.fontWeight": "500",
+	"editor.autoClosingBrackets": "never",
+	"editor.autoClosingQuotes": "never",
+	"extensions.autoCheckUpdates": false,
+	"editor.hover.delay": 1000,
+	"workbench.sash.hoverDelay": 1000,
+	"workbench.hover.delay": 1000,
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	}
+}
